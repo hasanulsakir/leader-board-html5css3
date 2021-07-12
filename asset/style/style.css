@@ -53,11 +53,13 @@ img:hover {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    text-decoration: none;
 }
 
 .logo-menu {
     display: flex;
     align-items: center;
+    text-decoration: none;
 }
 
 .logo {

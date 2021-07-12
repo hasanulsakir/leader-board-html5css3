@@ -285,13 +285,13 @@ hr {
     .section-title {
         text-align: center;
     }
-    .players {
+    .players,
+    .blogs {
         grid-template-columns: repeat(1, 1fr);
         /* padding: 5px 16px; */
     }
     .blog {
         justify-content: center;
-        flex-direction: column;
     }
     .player {
         flex-direction: column;

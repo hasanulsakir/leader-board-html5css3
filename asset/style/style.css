@@ -344,7 +344,7 @@ hr {
         width: 100%;
     }
     .nav-inner {
-        display: none;
+        width: 620px;
     }
     .container {
         width: 80%;

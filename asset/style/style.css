@@ -302,6 +302,9 @@ hr {
         justify-content: center;
         align-items: center;
     }
+    .course-content {
+        margin-bottom: 17px;
+    }
 }
 
 

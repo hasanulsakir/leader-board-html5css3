@@ -43,7 +43,50 @@ img:hover {
 .nav {
     height: 94px;
     width: 100%;
-    background-color: #562EFF
+    background-color: #562EFF;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-inner {
+    width: 870px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /* display: flex;
+    justify-content: space-between; */
+    align-items: center;
+}
+
+.logo {
+    width: 40px;
+    display: flex;
+}
+
+.logo h1 {
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #FFFFFF;
+}
+
+.navmenu {
+    display: flex;
+}
+
+.menu-item {
+    list-style-type: none;
+}
+
+.menu-item a {
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    color: #FFFFFF;
+}
+
+.profile-icon {
+    width: 52px;
+    height: 52px;
 }
 
 
@@ -55,6 +98,7 @@ img:hover {
     line-height: 36px;
     color: #562EFF;
     margin-top: 3px;
+    margin-bottom: 0px;
 }
 
 .top-players {
@@ -65,6 +109,7 @@ img:hover {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-row-gap: 29px;
+    margin-top: 40px;
 }
 
 .player {
@@ -103,6 +148,7 @@ hr {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 26px;
+    margin-top: 31px;
 }
 
 .blog {
@@ -143,9 +189,10 @@ hr {
 
 .courses {
     /* width: 252px; */
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 23px;
+    margin-top: 6px;
 }
 
 .course-box {
@@ -220,4 +267,65 @@ hr {
 
 .duration i {
     margin-right: 5px;
+}
+
+
+/***********************       Media Querey      ********************* */
+
+
+/***** mobile screen****** */
+
+@media only screen and (max-width:688px) {
+    .nav {
+        width: 100%;
+    }
+    .container {
+        width: 80%;
+    }
+    .section-title {
+        text-align: center;
+    }
+    .players {
+        grid-template-columns: repeat(1, 1fr);
+        /* padding: 5px 16px; */
+    }
+    .blog {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .player {
+        flex-direction: column;
+    }
+    .courses {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+/* ***********************Tablet***************** */
+
+@media only screen and (min-width:689px) and (max-width:992px) {
+    .nav {
+        width: 100%;
+    }
+    .container {
+        width: 80%;
+    }
+    .section-title {
+        text-align: center;
+    }
+    .players,
+    .courses {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .blog {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .player {
+        flex-direction: column;
+    }
 }

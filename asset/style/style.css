@@ -312,6 +312,7 @@ hr {
         flex-direction: column;
         align-items: center;
         padding-top: 20px;
+        width: 0px;
     }
     .container {
         width: 80%;
@@ -336,8 +337,8 @@ hr {
         justify-content: center;
         align-items: center;
     }
-    .course-content {
-        margin-bottom: 17px;
+    .course-box {
+        margin-bottom: 30px;
     }
 }
 
